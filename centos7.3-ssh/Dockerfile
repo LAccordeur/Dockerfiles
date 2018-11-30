@@ -9,7 +9,7 @@ FROM centos:7.3.1611
 MAINTAINER rogerguo007 (610641902@qq.com)
 
 # install ssh
-RUN yum -y update && yum install -y openssh openssh-server openssh-clients && yum clean all && rm -rf /tmp/*
+RUN yum -y update && yum install -y openssh openssh-server openssh-clients net-tools vim && yum clean all && rm -rf /tmp/*
 
 # generate ssh key and change password
 RUN ssh-keygen -q -N "" -t dsa -f /etc/ssh/ssh_host_dsa_key ;\
