@@ -25,8 +25,8 @@ ENV HBASE_HOME /usr/local/hbase
 ENV PATH $PATH:${HADOOP_HOME}:${HBASE_HOME}
 
 # add config file
-COPY ./hadoop-0.20.2/* $HADOOP_HOME/conf/
-COPY ./hbase-0.92.0/* $HBASE_HOME/conf/
+COPY ./hadoop-conf/* $HADOOP_HOME/conf/
+COPY ./hbase-conf/* $HBASE_HOME/conf/
 
 
 
