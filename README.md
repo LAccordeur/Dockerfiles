@@ -82,7 +82,7 @@ docker exec -it <container-id> /bin/bash
 
 ```
 
-- 进入hadoop master容器执行 ./hadoop namenode format然后执行./hdfs.sh，通过jps查看各个节点是否启动正常，至此hadoop集群启动过程完毕
+- 进入hadoop master容器执行 ./hadoop namenode -format然后执行./hdfs.sh，通过jps查看各个节点是否启动正常，至此hadoop集群启动过程完毕
 - 进入hbase master容器执行./start-hbase.sh启动hbase
 
 ##### 其他可能需要关注的问题
